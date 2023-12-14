@@ -4,6 +4,7 @@
     font-family: 'Roboto', 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
+    font-weight: 100;
 }
 
 .container{
@@ -11,6 +12,7 @@
     flex-direction: column;
     height: 100vh;
     justify-content: space-between;
+    padding-bottom: 25px;
 }
 
 .header,
@@ -101,12 +103,76 @@ h1{
 
 .info{
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    padding: 25px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.info-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    text-align: center;
 }
 
 .quote{
     flex: 1;
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+blockquote{
+    width: 750px;
+    font-size: 36px;
+}
+
+blockquote p{
+    font-style: italic;
+}
+
+blockquote footer{
+    text-align: end;
+    font-size: 18px;
+    color: #1f2937;
+    font-weight: 500;
 }
 
 .footer{
     flex-shrink: 0;
+    display: flex;
+    background-color: #3882F6;
+    width: 1000px;
+    margin: 50px auto;
+    padding: 10px;
+    justify-content: space-around;
+    border-radius: 4px;
+    color: #E5E7EB;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.footer button{
+    border: 2px solid white;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    width: 75px;
+    border-radius: 4px;
 }
